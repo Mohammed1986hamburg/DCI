@@ -1,0 +1,111 @@
+body, nav, li, ul, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* border: 1px solid black; */
+}
+
+nav {
+  background: deepskyblue;
+  display: flex;
+
+  height: 6vw;
+  
+}
+
+nav > li {
+  list-style-type: none;
+  font-family:tahoma;
+  padding: 1.5vw 0;
+  color: white;
+  font-size: 2.5vw;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav > li:hover {
+  background: black;
+  color:cyan;
+  cursor: pointer;
+}
+
+nav > li > ul {
+  display: none;
+  /* overflow: hidden;
+  height: 0vw;
+  transition: height 1s ease-in-out; */
+}
+
+nav > li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5vw 0;
+  background: rgba(0, 0, 0, 0.363);
+  text-shadow: 0 0 2vw red;
+
+  /* height: 12vw; */
+   
+}
+
+nav > li > ul > a {
+  color: white;
+  font-size: 1.32vw;
+  padding: 1vw 0;
+  text-decoration: none;
+  transition: color 0.4s ease-out;
+}
+
+nav > li:first-of-type {
+  flex-grow: 2;
+}
+
+nav > li > ul > a:hover {
+  color:red;
+}
+
+body {
+  background: rgba(0, 162, 255, 0.192);
+}
+
+section {
+  height: 40vw;
+  margin-top: 5vw;
+  /* border: 1px solid black; */
+  
+}
+
+@keyframes VaribaleName {
+  0% {transform: translate(0vw,10vw) rotate(20deg) ; }
+  25% {transform: translate(45vw,0vw); }
+  50% {transform: translate(90vw,10vw) rotate(-20deg); }
+  75% {transform: translate(45vw, 20vw); }
+  100% {transform: translate(0vw, 10vw);}
+}
+
+section div {
+  border: 1px solid black;
+  height: 10vw; width: 10vw;
+  border-radius: 50px;
+  background: red;
+  text-align: center;
+  position: relative;
+  top: 10%;
+
+
+  animation-name: VaribaleName;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+
+  /*or animation: VaribaleName 5s  linear 0.5s infinite  alternate; */
+  
+}
+
+section div p {
+  padding-top: 1vw;
+  font-family: Architects Daughter;
+
+}

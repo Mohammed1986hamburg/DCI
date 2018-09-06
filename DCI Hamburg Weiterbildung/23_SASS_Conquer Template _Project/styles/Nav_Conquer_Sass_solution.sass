@@ -1,0 +1,30 @@
+nav {
+  $nav_bg_color: #383e4c;
+  $border_link_color: #646d7c;
+
+  background: $nav_bg_color;
+  display: flex;
+  padding: 0.5vw 1vw 1.5vw 1vw;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+
+     a {
+       text: {
+         decoration: none;
+       };
+       margin: 0 1vw;
+       border: 0.1vw solid $border_link_color;
+       padding: 1.4vw 2vw;
+       color: white;
+       font: {
+         family: Raleway;
+         size: 2vw;
+       }
+      background: $nav_bg_color;
+      transition: background-color 0.3s ease-out;
+       &:hover {
+         background-color: lighten($nav_bg_color, 10%);
+       }
+     }
+}

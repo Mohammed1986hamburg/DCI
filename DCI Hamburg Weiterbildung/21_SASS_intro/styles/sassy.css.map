@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,SAAS;CACxB",
+    "sources": [
+        "sassy.scss"
+    ],
+    "names": [],
+    "file": "sassy.css"
+}

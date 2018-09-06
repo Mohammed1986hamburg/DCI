@@ -1,0 +1,39 @@
+form {
+	text-align: center;
+	font-size: 2vw;
+	border: 1px font-size;
+	background-image: url(https://img.rasset.ie/000cdfac-500.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	color: white;
+}
+
+form input {
+	font-size: 3vw;
+	margin: 1vw auto;
+	border-radius: 0.5vw;
+	text-align: center;
+
+}
+
+span {
+	font-size: 3vw;
+	margin: 1vw auto;
+
+}
+p {
+	
+	text-align: center;
+	
+}
+
+label{
+	margin-top: 2vw;
+	color: red;
+}
+
+button:hover {
+	cursor: pointer;
+
+}

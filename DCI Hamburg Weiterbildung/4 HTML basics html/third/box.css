@@ -1,0 +1,70 @@
+* {         /* reset to all*/      
+	margin: 0;
+    padding: 0;
+}
+div {
+	background: orange;
+	width: 49.6%;
+	overflow: hidden;
+	margin-bottom: 50px;
+	margin-top: 1px;
+	box-sizing: border-box;
+	height: 120px;
+
+	/*margin: 10px;*/
+	/*margin: 10px auto;  */
+	display: inline-block; /*convert from Block to inline*/
+	vertical-align: top;/* make all Blocks side to side from from top */
+}
+img {
+	width: 600px: 
+}
+p {
+	font-size: 44px;
+}
+#div2 {
+	
+	background: red;
+	font-size: 25px;
+
+/*	border-width: 10px;
+	border-style: dashed;
+	border-color: black;*/
+	border: 10px dashed black;
+
+/*	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;*/
+	padding: 15px 10px;
+
+	/*visibility: hidden;*/
+
+	
+}
+
+#div2 p{
+	font-size: 16px;
+
+}
+<button> {
+	font-size: 24px;
+	background: blue;
+	color: red;
+	border-radius: 10px;
+}
+
+button:hover {
+	cursor: pointer;
+	color: green;
+}
+
+button:focus {
+	outline: none;
+	background-size: red;
+	color: blue;
+}
+button:focus ~ img {  /*will */
+	display: none;
+}
+/**/

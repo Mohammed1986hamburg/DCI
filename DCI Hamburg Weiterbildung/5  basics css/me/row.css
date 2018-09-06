@@ -1,0 +1,28 @@
+body {
+	background: blue;
+	margin: 0;
+}
+
+
+header, footer {
+ height: 200px;
+ background: black;
+}
+
+nav {
+	height: 50px;
+	background: cyan;
+	margin: 10px 0;
+}
+
+article {
+	height: 120px;
+	background: brown;
+	margin: 10px 0;
+}
+ aside {
+ 	background: green;
+ 	height:450px;
+ 	width: 15%; 
+ }
+ 

@@ -1,0 +1,89 @@
+.add-padding {
+  margin-top: 0.5vw;
+}
+
+.marge {
+  margin: 0 1vw;
+  -webkit-box-shadow: 1px 1px 20px 2px red;
+          box-shadow: 1px 1px 20px 2px red;
+}
+
+.marge:hover {
+  -webkit-box-shadow: 1px 1px 20px 2px blue;
+          box-shadow: 1px 1px 20px 2px blue;
+}
+
+.forest {
+  background-image: url(../images/forest.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 45vw;
+}
+
+.forest .take_height {
+  height: 45vw;
+  background: transparent;
+}
+
+.forest h2, .forest p {
+  margin: 5vw 0;
+}
+
+.forest h2 {
+  font-size: 6.5vw;
+}
+
+.forest p {
+  font-size: 3.8vw;
+}
+
+.card {
+  -webkit-box-shadow: 1px 1px 20px 2px red;
+          box-shadow: 1px 1px 20px 2px red;
+}
+
+.card:hover {
+  -webkit-box-shadow: 1px 1px 20px 2px blue;
+          box-shadow: 1px 1px 20px 2px blue;
+}
+
+.card img {
+  height: 20vw;
+  width: 98%;
+}
+
+@media screen and (max-width: 990px) {
+  .card img {
+    height: 30vw;
+    width: 80%;
+  }
+}
+
+.btn-sh:hover {
+  -webkit-box-shadow: 1px 1px 20px 2px black;
+          box-shadow: 1px 1px 20px 2px black;
+}
+
+footer {
+  background-image: url(../images/alps.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 80vw;
+  }
+}
+
+footer h3 {
+  text-shadow: 0.2vw 0.2vw black;
+}
+footer p {
+  font-size: 2vw;
+  font-family: tahoma;
+  background: rgba(0,0,0,0.3);
+}
+/*# sourceMappingURL=style.css.map */

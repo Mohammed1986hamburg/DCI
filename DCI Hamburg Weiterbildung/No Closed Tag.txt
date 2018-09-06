@@ -1,0 +1,10 @@
+<img src="smiley.gif" alt="Smiley face" height="42" width="42">
+
+<input type="text" name="username">
+
+<br>
+
+<hr>
+
+<meta >
+

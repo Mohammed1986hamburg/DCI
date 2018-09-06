@@ -1,0 +1,66 @@
+form {
+  background-image: url(../../../images/hamburg.jpg);
+  @extend %background_stick;
+  padding: 5vw 0;
+  display: grid;
+  grid-template-areas: repeat(8, 1fr) / repeat(8, 5vw);
+  grid-gap: 1vw 2vw;
+
+    h2 {
+      grid-area: 1 / 1 / span 2 / span 8;
+      text: {
+        align:center;
+        shadow: 0.2vw 0.1vw black;
+      }
+      font: {
+        size:3vw;
+      }
+      color: #fff;
+    }
+
+    p {
+      grid-area: 3 / 3 / span 2 / span 4;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 2vw;
+      font: {
+        size: 2.1vw;
+      }
+    }
+
+    @for $iterator from 1 through 3 {
+      input:nth-of-type(#{$iterator}) {
+        grid-area: #{$iterator + 4} / 3 / span 1 / span 2;
+      }
+    }
+
+    input, textarea {
+      padding: 0.75vw 0.25vw;
+      background: rgba(#f2f2f2, 0.7);
+      border: none;
+      font: {
+        size: 1.4vw;
+        family: 'Cousine';
+      }
+      &::placeholder {
+        color: black;
+      }
+    }
+
+    textarea {
+      grid-area: 5 / 5 / span 3 / span 2;
+    }
+
+    button {
+      @extend %btn;
+      grid-area: 8 / 5 / span 1 / span 1;
+      background-color: rebeccapurple;
+      font: {
+        size: 2.2vw;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: darken(rebeccapurple, 10%);
+      }
+    }
+}

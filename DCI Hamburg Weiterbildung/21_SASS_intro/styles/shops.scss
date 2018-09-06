@@ -1,0 +1,47 @@
+body
+ {
+  main 
+  {
+    border: 15px red solid;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10vw auto; 
+    width: 80vw;
+    height: 40vw;
+    section {   
+      margin: 2vw 3vw;  
+      border: 2px black solid;
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-around;
+      align-items: center;
+      width: 25%;
+      height: 35%;
+      div {
+        padding: 3vw 6vw;
+        background-size: 100% 100% ;
+        background-repeat: no-repeat;
+        background-position: center center;
+          }
+      @each $pos, $team, $quantity in (1, desktops, 12), (2, notebooks, 6), (3, smartphones, 24), (4, smartwatches, 10) 
+      {
+        &:nth-of-type(#{$pos})
+        {
+            div 
+            {
+              background-image: url(../images/#{$team}.png);
+            }
+            h4:before 
+            {
+                content: '#{$team}';    
+            }
+            @if  $pos == 1 { span:before {content: 'only '+'#{$quantity} ';} }
+            @else if  $pos == 2 { span:before {content: 'only '+'#{$quantity} ';} }
+            @else if  $pos == 3 { span:before {content: 'only '+'#{$quantity} ';} }
+            @else  { span:before {content: 'only '+'#{$quantity} ';} } 
+        }
+      }  
+    }
+  }
+}

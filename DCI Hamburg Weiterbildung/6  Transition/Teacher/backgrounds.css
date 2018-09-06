@@ -1,0 +1,15 @@
+section {
+  width: 60vw;
+  height: 40vw;
+  border: 1px solid black;
+  margin: 2vw auto;
+  background-image: url(../images/kobenhavn.jpg);
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s;
+}
+
+section:hover {
+  background-size: 110% 110%;
+}

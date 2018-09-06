@@ -1,0 +1,119 @@
+Go to root
+sudo su
+-------------------------------------------
+Wifi restart :
+sudo service network-manager restart 
+
+to update wifi:
+https://unix.stackexchange.com/questions/379049/realtek-wifi-driver-problem-in-linux-mint-18-2
+-------------------------------------------
+Ubuntu Version
+lsb_release -a
+-------------------------------------------
+super user:
+sudo su
+-------------------------------------------
+current directry:
+pwd
+-------------------------------------------
+app update:
+sudo apt-get update
+-------------------------------------------
+os upgrade:
+sudo apt-get upgrade
+-------------------------------------------
+list everything:
+ls
+ls --help
+ls -l     list with discription  
+ls -t     list by time
+ls -a     list +hidden files(.____)
+ls -alt
+-------------------------------------------
+window clean:
+clean
+....................................
+./    ... the same folder
+../   ... the priveos floder
+../.. ... the 2 priveos floder
+Tab   ... contune the path
+........................................................................
+create file
+touch home.html
+......................................................
+create folder
+mkdir ____
+...................................
+cpoy
+cp source destinatin
+...................................
+delete file
+rm source 
+...................................
+delete folder
+rm -r source 
+...................................
+cut file
+mv source destinatin/
+.......................
+rename file
+mv mhd.jpg ali.jpg  
+.................................
+edite file
+nano home.html
+.................................
+display the containt of flie
+cat home.html 
+...............................
+to search for a word in containt  
+grep -r _______
+
+to search for a word in containt + ingnore case sensitivity 
+grep -i _______
+
+or both
+grep -ri _______
+.................................
+to creat private command lines (~/.bash_profile)
+nano ~/.bash_profile
+lias mohammed='pwd'
+ctr+o
+ctr+x
+source ~/.bash_profile
+
+then write in terminal yours private command line (mohammed)
+
+.................................
+Using 'sed' to find and replace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

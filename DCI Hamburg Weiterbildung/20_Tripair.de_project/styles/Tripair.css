@@ -1,0 +1,21 @@
+body,nav,li, a, img, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+nav {
+    background: linear-gradient(to bottom, darkblue, deepskyblue);
+}
+nav > li {
+    list-style-type: none;
+}
+
+nav > li > a > img {
+    width:     10vw;
+}

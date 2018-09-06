@@ -1,0 +1,22 @@
+body {
+	background: orange;
+}
+p {
+	color: blue;
+	background: deepskyblue;
+}
+.changetext {
+	background: red;
+}
+
+#bigerfont {
+	font-size: 30px;
+}
+.changefamily {
+	font-family: helvetica;
+}
+
+h1.changetext {
+	background: green;
+
+}

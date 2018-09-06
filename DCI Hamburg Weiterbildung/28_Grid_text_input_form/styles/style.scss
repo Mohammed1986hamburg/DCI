@@ -1,0 +1,77 @@
+  section {
+    height: 45vw;
+    background: {
+      repeat: no-repeat;
+      size: 100% 100%;
+      image: url(../hamburg.jpg);
+    }
+    display: flex;
+    // define the whole section as a flex so you
+    //  arrange the space between your heading,
+    //  your paragraph and your form. This is not absolutely
+    // necessary but it helps
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+      font-size: 4vw;
+      color: white;
+    }
+    p {
+      font-size: 1.7vw;
+      font-family: tahoma;
+      width: 90%;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    form {
+      // Make this form a grid container.
+      display: grid;
+      width: 80%;
+      // Grid template defines the rows and columns. Auto means
+      // the content defines the height of each row. The more content
+      //  you add the more the height of the whole row grows. Fr is a
+      //  fraction unit, that means we divide each column equally.
+      grid-template: repeat(3, auto) / repeat(6, 1fr);
+      // Gap between rows and columns. First the distance bewtween rows,
+      // then between columns.
+      grid-gap: 1vw 2vw;
+      input[type="text"] {
+        // define the area the element takes. First the beginning-row,
+        // then the beginning column, how many rows this spans, how
+        // many columns this spans.
+        grid-area: 1 / 2 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+      }
+      input[type="password"] {
+        grid-area: 2 / 2 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+      }
+      input[type="email"] {
+        grid-area: 3 / 2 / span 1 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+      }
+      textarea {
+        grid-area: 1 / 4 / span 2 / span 2;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+      }
+      button {
+        color: white;
+        background: green;
+        border: none;
+        grid-area: 3 / 4 / span 1 / span 1;
+        font-size: 1.5vw;
+        padding: 1vw 0.5vw;
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}

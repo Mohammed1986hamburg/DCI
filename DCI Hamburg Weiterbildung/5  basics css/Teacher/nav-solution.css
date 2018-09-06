@@ -1,0 +1,29 @@
+header {
+  background: black;
+  color: white;
+  font-size: 5vw;
+  font-family: monospace;
+  text-align: center;
+  padding: 2vw 1vw;
+  font-weight: bold;
+}
+
+nav {
+  background: deepskyblue;
+  margin: 1vw 0;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  font-size: 3.2vw;
+  padding: 1vw 2.6vw;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

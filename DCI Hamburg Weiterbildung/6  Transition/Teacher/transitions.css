@@ -1,0 +1,71 @@
+section {
+  width: 20vw;
+  height: 20vw;
+  background: red;
+  transition: all 2s linear;
+  margin-bottom: 2vw;
+}
+
+section:hover {
+  background: blue;
+  width: 50vw;
+  height: 50vw;
+}
+
+section p {
+  font-size: 2vw;
+  transition: font-size 2s;
+}
+
+section:hover > p {
+  font-size: 5vw;
+}
+
+button {
+  font-size: 5vw;
+  padding: 3vw;
+  border:none;
+  border-radius: 0.5vw;
+  background: red;
+  color: white;
+}
+
+body {text-align: center;}
+
+li {
+  list-style-type: none;
+  background: deepskyblue;
+  color: black;
+  font-size: 2.4vw;
+  margin-bottom: 1vw;
+  width: 0;
+  overflow: hidden;
+}
+
+li:first-of-type {
+  transition: width 1s ease-out;
+}
+
+li:nth-of-type(2) {
+  transition: width 1s ease-out 0.5s;
+}
+
+li:nth-of-type(3) {
+  transition: width 1s ease-out 1s;
+}
+
+li:nth-of-type(4) {
+  transition: width 1s ease-out 1.5s;
+}
+
+li:nth-of-type(5) {
+  transition: width 1s ease-out 2s;
+}
+
+li:last-of-type {
+  transition: width 1s ease-out 2.5s;
+}
+
+button:focus ~ li {
+  width: 100%;
+}

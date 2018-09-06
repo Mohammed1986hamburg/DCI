@@ -1,0 +1,66 @@
+nav {
+    background: lightblue;
+    text-align: center;
+}
+body {
+    margin: 0;
+}
+
+nav > a {
+    
+    color: white;
+    
+    text-decoration: none;
+    
+    /* border: 1px solid black; */
+    display: inline-block;     /* why */   
+}
+
+nav > a:hover {
+    background: lightgreen;
+    color: red;
+    font-size: 3vw;
+}
+nav > button {
+    background: transparent;
+    border: none;
+}
+nav > a, nav > button {
+    font-family: Verdana;
+    font-size: 2.5vw;
+    padding: 2vw 1.5vw;
+}
+nav > button:hover {
+    cursor: pointer;
+}
+/* @media screen and (max-width: 990px){
+    nav {
+        background: red;
+    }
+} */
+/* @media screen and (max-width: 650px){ /* for Tablate. if width up to 650px , then  do the function. else do the orginal  */
+    nav > a {
+        font-size: 4vw;
+
+    }
+    body {
+        background: rgb(219, 250, 210);
+    }
+} */
+@media screen and (max-width:400px){ /* for Mobile. if width up to 400px , then  do the function. else do the orginal  */
+    nav > a {
+        display: none;
+        font-size: 4vw;
+    }
+    nav > button {
+        font-size: 4vw;
+    }
+    nav > button:focus ~ a {
+        display: block;
+       
+    }
+    body {
+        background: rgb(221, 210, 250);
+    }
+} 
+

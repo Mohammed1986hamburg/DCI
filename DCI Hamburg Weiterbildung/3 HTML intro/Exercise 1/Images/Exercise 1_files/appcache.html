@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://www.notion.so/appcache.html -->
+<html lang="en" class="no-js" manifest="/offline.appcache"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./fs.js.Download"></script></head><body>
+	<script>
+		////////////////////////////////////
+		// REMEMBER: No fancy JavaScript! //
+		////////////////////////////////////
+
+		// Forward events to the parent window.
+		var listen = function (eventName) {
+			window.applicationCache.addEventListener(eventName, function () {
+				if (window.parent) {
+					window.parent.postMessage({ type: "appcache", message: eventName }, "*")
+				}
+			})
+		}
+
+		// Listen to all the AppCache events.
+		listen("updateready")
+		listen("cappCachehed")
+		listen("checking")
+		listen("downloading")
+		listen("error")
+		listen("noupdate")
+		listen("obsolete")
+		listen("progress")
+
+		// Send errors back to the parent window.
+		var error = function (message) {
+			if (window.parent) {
+				window.parent.postMessage({ type: "appcache-error", message: message }, "*")
+			}
+		}
+
+		window.addEventListener("error", function (e) {
+			error(e.message)
+		})
+
+		window.addEventListener(
+			"message",
+			function (event) {
+				if (event.data === "swap") {
+					try {
+						window.applicationCache.swapCache()
+					} catch (e) {
+						error(e.message)
+					}
+				} else if (event.data === "update") {
+					try {
+						window.applicationCache.update()
+					} catch (e) {
+						error(e.message)
+					}
+				} else if (event.data === "version") {
+					var xhttp = new XMLHttpRequest()
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+							var version = this.responseText.split("\n")[1].substring(1)
+							window.parent.postMessage(
+								{ type: "appcache-version", message: version },
+								"*"
+							)
+						}
+					}
+					xhttp.open("GET", "/offline.appcache", true)
+					xhttp.send()
+				}
+			},
+			false
+		)
+	</script>
+
+
+</body></html>

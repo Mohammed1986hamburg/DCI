@@ -1,0 +1,67 @@
+section {
+  height: 45vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../hamburg.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 4vw;
+  color: white;
+}
+
+section p {
+  font-size: 1.7vw;
+  font-family: tahoma;
+  width: 90%;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+section form {
+  display: grid;
+  width: 80%;
+  grid-template: repeat(3, auto)/repeat(6, 1fr);
+  grid-gap: 1vw 2vw;
+}
+
+section form input[type="text"] {
+  grid-area: 1 / 2 / span 1 / span 2;
+  font-size: 1.5vw;
+  padding: 1vw 0.5vw;
+}
+
+section form input[type="password"] {
+  grid-area: 2 / 2 / span 1 / span 2;
+  font-size: 1.5vw;
+  padding: 1vw 0.5vw;
+}
+
+section form input[type="email"] {
+  grid-area: 3 / 2 / span 1 / span 2;
+  font-size: 1.5vw;
+  padding: 1vw 0.5vw;
+}
+
+section form textarea {
+  grid-area: 1 / 4 / span 2 / span 2;
+  font-size: 1.5vw;
+  padding: 1vw 0.5vw;
+}
+
+section form button {
+  color: white;
+  background: green;
+  border: none;
+  grid-area: 3 / 4 / span 1 / span 1;
+  font-size: 1.5vw;
+  padding: 1vw 0.5vw;
+}
+
+section form button :hover {
+  cursor: pointer;
+}

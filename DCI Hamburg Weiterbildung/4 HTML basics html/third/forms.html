@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lan="en">
+
+<head><!-- Info     -->
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <title>Just a form</title>
+</head>
+
+<body>
+  <form method="post" action="takedata.php">
+    <fieldset>
+      <legend>Required Info</legend>
+      <label for="username"><strong>Write here your Username</strong></label>
+      &nbsp;<input type="text" name="username" required placeholder="Your Name"><br><br>
+
+      <label for="pwd"><strong>put here your Password</strong></label>
+      <input type="password" name="pwd" required placeholder="Your Password"><br><br>
+
+      <label for="birthday"><strong>when were you born?</strong></label>
+      <input type="date" name="birthday" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Optional Info</legend>
+      <label><strong>Pick a food that you like</strong></label><br>
+      <input type="checkbox" checked>Tuna
+      <input type="checkbox">Salmon
+      <input type="checkbox">Steak<br>
+
+      <label><strong>What is your gender</strong></label><br>
+      <input type="radio" name="gender">Male
+      <input type="radio" name="gender">Female<br>
+
+      <label><strong>What is your gender</strong></label><br>
+      <select>
+        <option>Germany</option>
+        <option>USA</option>
+        <option>Syria</option>
+        <option>Russa</option>
+        <option>UK</option>
+      </select>
+
+    <br><br>
+    <label><strong>How did you hear about us?</strong></label><br>
+    <textarea rows="10" cols="80"></textarea>
+
+    <br><br>
+    <label><strong>Upload your photo here</strong></label><br>
+    <input type="file">
+
+    </fieldset>
+
+    <br><br>
+    <button type="submit"> Submit </button>   <!-- this button submit is only for this form  -->
+  </form>
+  <span>English:</span>
+  <meter style="width: 50; height:50px;" value="0.7"></meter>
+  <progress max="1000" value="850"></progress>
+</body>

@@ -1,0 +1,64 @@
+main {
+  $main_width: 75vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 4vw 2.5vw;
+
+
+    div {
+      width: $main_width/4;
+      display: flex;
+      flex-direction: column;
+      margin: 0 1.5vw;
+      background-color: #f2f2f2;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 12vw;
+      }
+
+      h4 {
+        padding: 0.6vw 0;
+        margin: 0;
+        font: {
+          family: 'Poiret One';
+          size: 2.1vw;
+        }
+        text: {
+          align: center;
+        }
+      }
+
+      article {
+        font: {
+          family: Raleway;
+          size: 1vw;
+        }
+        padding: 1vw 0.75vw;
+      }
+
+      button {
+        @extend %btn;
+      }
+
+      @each $pos, $color in (1, green), (2, deepskyblue), (3, red) {
+        &:nth-of-type(#{$pos}) {
+          h4 {
+            color: $color;
+          }
+          button {
+            background: $color;
+            &:hover {
+              background: lighten($color, 15%);
+              cursor: pointer;
+            }
+            @if $pos != 2 {
+              margin-top: 1.1vw;
+            }
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,11 @@
+body h1 {
+    color: lightblue;
+}
+body p {
+    color: red;
+    text-align: center;
+}
+body {
+    /* background-image: url(https://www.tutorialspoint.com/spring/images/logo.png); */
+    background-repeat: no-repeat;
+}

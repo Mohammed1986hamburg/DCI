@@ -1,0 +1,52 @@
+.add-padding {
+	margin-top: 0.5vw;
+}
+.marge {
+	margin: 0 1vw;
+	box-shadow: 1px 1px 20px 2px red;
+	&:hover {
+		box-shadow: 1px 1px 20px 2px blue;
+	}
+}
+.forest {
+	$total_height: 45vw;
+	background-image: url(../images/forest.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: $total_height;
+
+	.take_height {
+		height: $total_height;
+		background: transparent;
+	}
+	h2,p {
+		margin: 5vw 0;
+	}
+	h2 {
+		font-size: 6.5vw;
+	}
+	p {
+		font-size: 3.8vw;
+	}
+
+}
+.card {
+	box-shadow: 1px 1px 20px 2px red;
+	&:hover {
+		box-shadow: 1px 1px 20px 2px blue;
+	}
+	img {
+		height: 20vw;
+		width: 98%;
+		@media screen and (max-width: 990px) {
+			height: 30vw;
+			width: 80%;
+		}
+	}
+}
+.btn-sh {
+	&:hover {
+		box-shadow: 1px 1px 20px 2px black;
+	}
+}

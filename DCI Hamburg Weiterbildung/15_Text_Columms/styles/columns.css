@@ -1,0 +1,22 @@
+article {
+  font-family: lato;
+  font-size: 1.5vw;
+  letter-spacing: 0.12vw;
+  column-count: 3;
+  column-fill: balance;
+  column-gap: 5vw;
+  column-rule: 0.5vw double pink;
+}
+
+article::first-letter {
+  font-size: 6vw;
+  background: black;
+  color: orange;
+}
+
+h3 {
+  font-family: cookie;
+  font-size: 2.5vw;
+  text-align: center;
+  color: deepskyblue;
+}

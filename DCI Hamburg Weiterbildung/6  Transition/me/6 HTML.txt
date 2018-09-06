@@ -1,0 +1,44 @@
+- (section>h3+img+article)*5
+
+-section { 
+
+  background-image: url(images/trier.jpg);   or  background-color: red; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-postion: 50% 50%;        ..... set in the middle
+  transition: background-size 0.5s;    .... to make action for 0.5 second in section:hover
+       }
+
+ section:hover {
+       background-size: 130% 130%;     ..... here is the CTION 
+     }
+
+
+
+- background: url(images/trier.jpg);   ... and the above is default
+  background-color: red;                ... and the above is default
+
+-  background-size: 1% 1%;
+   background-repeat: no-repeat;  ... delete this and see !!!!!  
+
+
+- background-size: cover ;  ......??????
+
+- li:first-of-type {
+                   }
+  li:noth-of-type(3){
+                   }
+  li:last-of-type {
+                   }
+
+- nav a:hover {                   .....hover: mean when I move inside in.focus: mean when I press. but here in the link(a): inside in=press so we use hover  
+       background: black;        ..... that is when I click on all links in nav will do
+       color: cyan;              ......nav a:all links in nav , hover: do 
+              }
+- section:hover {                ..... that when the mouse move in to section, the will do(hover)
+	background: blue
+                 }
+- button:focus~section {         ......  when I press on button, then do in section 
+          width: 100%;
+                       }
+  

@@ -1,0 +1,339 @@
+HTML 
+
+- !+tab     .... insert html body as automatic
+- Case insanstive 
+- The <h1> to <h6> tags are used to define HTML headings.
+  <h1> defines the most important heading. <h6> defines the least important heading.
+  Use h1 to h6 elements only for headings. Do not use them just to make text bold or big. Use other tags for that.
+  ex: <h1>This is heading 1</h1> 
+
+- Hello               ... here no font style
+- <tage>Visible content</tage> ...... all this are called element
+- <!doctype html>     ... it means that uses HTML v5
+- <!--     -->       ... only comment
+
+-<meta>     .... more info about this text
+- <meta charset="utf-8">      .... we tell the brwoser to read the text as A-Z 1-9 ... 
+- <meta name="keywords" content="DCI, 4th Day, HAMBURG">   ... invasble keyword about this website
+- <meta name="vieport" content="width=device-width, initial-scale=1.0">....Meaning no matter the width of the device you are on, whether on desktop or
+ mobile. the website will follow the width of the device the user is on 
+
+-<h1> to <h6>    why 1-6 ? h1 is the best ipmortrant and so on h2 h3 h4 h5 h6  
+
+-<img src="smily.gif" alt="Smiley face" width="42" height="42"> 
+images : <img src="images/web.jpg" title="go to biger pic" width="300" height="300" >
+images : <img src="images/web.jpg" alt="alternative description when the photo did not download">
+
+
+-HTML elements: Blocks, Inlines 
+Blocks(alone one line): they do not accept other elements at the same line. they take 100% screen's width. you can change the width and the height through css.
+as:<p>, <h1>...<h2>,<table>,<div>,<article>,<side>,<section>,<nav>,<li>,
+Inlines: they access other elements side by side. they take as width as content. you are not allowed apply different width and hright properties.
+as:<img>,<a>,<button>
+
+_      <table>
+        <thead>
+          <tr>                     ...... 1th row
+          <th>Name</th>            ...... 1th data in 1th orw ... th = table header and not data
+          <th>Photo</th>           ...... second data in 1th orw
+          <th>Age</th>
+          <th>Programming</th>
+          <th>Experins</th>
+          <th>Nationlty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>                    ...... 2th row
+          <td><img width="40" height="40" src="https://placekitten.com/200/300"/></td>
+          <td>hana</td>           ...... 2th data in 2th orw ....td = table data 
+          <td>Wahba</td>
+          <td>31</td>
+          <td>Africa</td>
+          </tr>
+          <tr>                      ...... 3th row
+          <td><img width="40" height="40" src="https://placekitten.com/203/300"/></td>
+          <td>ali</td>
+          <td>Wahba</td>
+          <td>32</td>
+          <td>Syria</td>
+          </tr>
+         </tbody>
+      </table>
+
+- <ul>     ..... unordered lists ( without counter)
+  <li></li>
+  <li></li>
+  <li></li>
+  </ul>
+
+- <ol>     ..... ordered lists ( with counter)
+  <li></li>
+  <li></li>
+  <li></li>
+  </ol>
+
+- src : where something comes from the origin. SRC - Source | Often used in tags to give the web page the source of an image, video or file.
+  href: the targeet where we are to go. HREF - Hyperlink Reference | Often used in tags to reference another page or web link. 
+
+-<iframe src="http://www.contra.gr/"></iframe>  
+      .... An inline frame is used to embed another document(link from outside)
+      .... Tip: To deal with browsers that do not support <iframe>, add a text between the opening <iframe> tag and the closing </iframe> tag.
+      ex: <iframe src="https://www.w3schools.com">
+          <p>Your browser does not support iframes.</p>
+	  </iframe>
+
+- <fieldset> </fieldset>       .... The <fieldset> tag draws a box around the related elements.
+- <legend>Required Info</legend>  .... only info next to the above <fieldset>
+  ex: <form>
+            <fieldset>
+              <legend>Personalia:</legend>
+              Name: <input type="text"><br>
+              Email: <input type="text"><br>
+              Date of birth: <input type="text">
+           </fieldset>
+     </form>
+
+
+- <label for="username"><strong>Write here your Username</strong></label> 
+- <input type="text" name="username"><br><br>  ... for="username"&name="username" will make visual conntion beetwen this label and this input  
+
+
+- <label><strong>What is your gender</strong></label><br>               ..name="gender" will make to decide you if you are male or famel, not both
+- <input type="radio" name="gender">Male
+- <input type="radio" name="gender">Female
+  
+
+- front-size: 5vw;      ..... it is better from px
+
+-The <span> </span> ..tag provides a way to add a hook to a part of a text or a part of a document.
+ <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+-css:body { color: red !important}     
+ HTML: <body>
+       <p>
+           <span style="color=blue">consectetur adipisicing elit,</span>      .... css ist Stack , but becuse the !important the colr will be red
+      </p>
+      </body>
+
+-google font : https://fonts.google.com      ... copy the link of font style
+
+html:   
+ <head>
+ 
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">     .... Pacifico
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head> 
+CSS: 
+     font-family: Pacifico;
+
+
+- Class vs ID:
+<p class="changetext">                      ... class can to more elements
+<p id="bigerfont" class="changetext">       ... id is uniq for one element    
+
+<p class="change text">    .... it means that p has 2 class 1th change and 2th text, so no no space in class name
+
+Html: <h1 class="changetext">Hello</h1> , CSS: h1.changetext {background: green;}    ...only h1 in class="changetext" will change
+
+- css Hietarchy: 1 important, 2 inline style, 3 id selector,4 class selector, 5 tag selector
+
+-<div></div>          ...The <div> tag defines a division(box) or a section in an HTML document.
+                      ...The <div> element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
+                      ... autmatic break line <br>,  
+ 
+- div  {
+	background: orange;
+	width: 500px;
+	overflow: hidden;     ... it mean do not allow over 500px
+        }
+   img {
+	width: 600px:        ... here it is more 500px
+        }
+
+-div {	box-sizing: border-box;     }  .... to marege box size +border+padding, but without margin size.
+  content-box	Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
+  border-box	The width and height properties (and min/max properties) includes content, padding and border.
+
+- body {text-align: center;}    .... text-align well effect on inline elements+Tex, no Block elements.
+
+- div {margin: 10px auto;}          ... will do 10top,10buttom and the reamining space of right and left will divided
+
+-<hr>    
+                         ....hozrzinal line
+- visibility: hidden;       .... the element will hidden but it will take space
+
+- The <section> </section>    ...<section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+- (section>h3+img+article)*5
+
+-section { 
+
+  background-image: url(images/trier.jpg);   or  background-color: red; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-postion: 50% 50%;        ..... set in the middle
+  transition: background-size 0.5s;    .... to make action for 0.5 second in section:hover
+       }
+
+ section:hover {
+       background-size: 130% 130%;     ..... here is the ACTION 
+     }
+
+
+
+- background: url(images/trier.jpg);   ... and the above is default
+  background-color: red;                ... and the above is default
+
+-  background-size: 1% 1%;
+   background-repeat: no-repeat;  ... delete this and see !!!!!  
+
+
+- li:first-of-type {
+                   }
+  li:noth-of-type(3){
+                   }
+  li:last-of-type {
+                   }
+-<a href="https://www.w3schools.com">Visit W3Schools.com!</a>   ...... The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+- nav a:hover { background: black; color: cyan; }
+                .....hover: mean when I move inside in.focus: mean when I press. but here in the link(a): inside in=press so we use hover  
+               ..... that is when I click on all links in nav will do
+                 ......nav a:all links in nav , hover: do 
+              
+- section:hover { background: blue}  ..... that when the mouse move in to section, the will do(hover)
+                               
+	
+- button:focus~section { width: 100%; }  ......  when I press on button, then do in section
+                                 
+section:nth-of-type(1) {       .... that mean the 1th secion
+
+- in HTML
+  <section>                       
+   		 <button>             
+    	 	 </button>         
+   		 <div> 
+      			 <img>   </img>
+			 <img>   </img>
+			 <img>   </img>
+   		 </div>
+   </section> 
+                   .... here <button> and <div> are siblings, and <img> is childern 
+                   .... in HTMl when I need to accsess inside <section>, so can to accsess only the same level "siblings" and the childern
+                   .... I can not access nothing outside <section>
+    
+   in css :   section div img {}           ...  only all img (childern and grandkids) in div in secetion
+              section div > img {}         ...  only all img (childern, but no grandkids) in div in secetion
+
+- alt + shft + #                       ....  /**/ 
+- alt + shft + 7                       .... {}
+
+- In HTML :  <button>Enter</button>    .... The Button will be "Enter"
+             <button><img src="images/hamburg.jpg" alt=""></button>    .... The Button will be "Image"
+  In CSS :   button {
+                 background: transparent;    ..... to make the background of Button as transparent
+                 border: none;               ..... to make no border for the Button
+
+
+                        }
+
+
+------------------------------------------------------------------------------------------------------------
+----------------------------------------JavaScript----------------------------------------------------------
+- <body>                                                     
+
+
+   <script src="basicjs.js" type="text/javascript"></script>  ..... it is seted in the end of body becuse we need contents before in HTML,and then do the action of javasript.js file
+  </body>
+
+-Js is Blocking code = synchronous code, that mean will do line by line , it will not go to next line befor to finish the current line
+
+- alert('Hello Js');             ..... a function to open small window and print the value
+
+- var mohammedsName = 'mohammed';     .... mohammedsName is Variable and will be string type because 'mohammed' is text
+
+- var mohammedsName = 1234;     .... mohammedsName is Variable and will be intager type because 1234 is number
+
+-var Con = '30'; Con = 3*30; alert(Con); ..... here * will convert Con from string to intager
+
+-ctr + shft + i >> Console >> typeof ...                 .... I will see the Var type. ex: typeof mohammedsName >>Enter>> "number" 
+
+- console.log(typeof mohammedsName);        .... it will write in console screen
+
+-console.log(d);                            .... it will write the value of d
+
+- var userName = Ali; alert('Welcome '+ userName);      ...   Welcome Ali
+
+- ==       ...  checking equality  
+- ===     ...... checking equality and data type!  ex: 5 === 5  true, 5 === '5' false
+
+- !=                                 ... not checking equality
+- !==     ...... checking not equality and not data type!  ex: 5 != 5  false ( is 5 not equal 5 ? flase , 5 !== '5' true ( is 5 as equal and type   not equal   '5' as equal and type ? true
+
+- age++;                             ... age = age + 1;
+- age--;                             ... age = age - 1;
+
+
+- 5 > 7
+- 6 < 8
+- 3 >= 9
+- 4 <= 3
+
+- &&     ... and
+- or     ... ||
+- not    ... !
+
+- prompt('Give your name');        .. a function to open small window and enter the value
+  Ex: var userName = prompt('Give your name');
+
+
+- for (var i = 0; i <= 10; i++) {                                ..... will it increase one bye one
+    console.log ('The Nummber   ' + i + '  is even');         
+   }
+
+- for (var i = 0; i <= 10; i+=100) {                             ..... will it increase 100 bye 100
+    console.log ('The Nummber   ' + i + '  is even');
+   }
+
+- for (i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+   }        ....The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+ 
+- for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }   ...... The break statement breaks the loop and continues executing the code after the loop (if any):
+      }
+
+- 'a' > 'c'       false
+  'a'.charCodeAt()    97
+  'c'.charCodeAt()    
+99
+
+- function x() {   }                        ..... to create functsion that name x
+
+- function x(user,age) {   }                ..... not need to make (var user, agr;)... user and age will access only iside this funtion
+
+- function x(a,b) { return a+b;   }        ...... th return of function 
+
+- inputMy.addEventListener('change',function(){console.log('the value was changed!')});   .... function() is callback function
+
+- document.querySelector(".example");      ....The querySelector() method only returns the first element that matches the specified selectors. To return all the matches, use the querySelectorAll()
+
+- Important Note :   in css: font-size    in Js: fontSize  .... bcs in js not allowed to us - 
+
+- Important Noteeeeeeeeeeeee :
+  var Input1age = document.querySelector('input:first-of-type');   .....// here  Input1age is refrence to 'input:first-of-type'. it mean that Input1age=input:first-of-type. it mean that Input1age is not the value of input:first-of-type, but it is a varible to first-of-type.  
+  Input1age ='';      ..... here to clear the Input element in HTML page         
+       
+
+
+  
+
+
+ 	
+
+
+
+
+
+
+ 
+

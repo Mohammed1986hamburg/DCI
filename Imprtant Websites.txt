@@ -1,0 +1,60 @@
+The Palne : 1-SQL, JavaScript, Java    2-Spring, Node.js ,Swift
+https://www.w3schools.com/sql/default.asp        ....SQL
+https://www.w3schools.com/js/default.asp         ....JS
+https://www.tutorialspoint.com/java/java_pdf_version.htm    ...Java
+
+https://www.tutorialspoint.com/spring/            ..Spring
+https://www.w3schools.com/nodejs/default.asp      .. Node.js
+
+
+-23_SASS_Project
+24_SASS__cities_texts
+-18_nav_drop_down
+-CSS column-count Property ..and so on
+-15_Text_Columms
+position
+position absolute;  relative;
+background-attachment: fixed;
+-------------------------------------------------
+                         Swift
+Swift is a relatively new programming language released by Apple in 2014. This is a language for developing native iOS or macOS applications.
+----------------------------------------------
+            electron.js
+Build desktop apps with JavaScript, HTML, and CSS.
+
+https://electronjs.org/
+------------------------------------------------
+             react native
+Build mobile apps with JavaScript, HTML, and CSS.
+-----------------------------------------------------
+
+https://scotch.io/search?q=jsp              .... to learn advanced codes
+
+https://www.tutorialspoint.com/index.htm    .... to learn programming
+
+https://www.tutorialspoint.com/jsp/         ...jsp
+
+http://jsbin.com        ...to test HTML,CSS,JavaScript how appear
+
+https://www.w3schools.com/     .. to learn
+
+https://fonts.google.com    ... google fonts
+
+https://www.pexels.com/     ... Images
+
+https://foundation.zurb.com/    .... to bulid Sites and Emails ... free cost
+
+https://bootstrapstudio.io/     ....  to bulid Sites .... cost money
+
+https://caveofprogramming.teachable.com/courses  .... to learn java
+
+https://color.adobe.com/create/color-wheel/     ..... color adope
+
+https://www.sassmeister.com                     ..... convert sass to css
+https://sass-lang.com                           ..... Sass Website
+
+
+/www.xing.com 
+https://lebenslauf.com/
+http://hexenwaeldchen.de/familien-camping/            ...camping
+https://coolcamping.com/campsites/europe/germany/north-west-germany/lower-saxony-bremen/2168-uhlenkper?starts_at=&ends_at=&adults=0&children=0#

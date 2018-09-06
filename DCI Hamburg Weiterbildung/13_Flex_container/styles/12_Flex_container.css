@@ -1,0 +1,65 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 90vw;
+    margin: 15% auto;
+    /* border: 3px solid yellow; */
+   
+    
+}
+
+section > div:nth-last-of-type(1) {
+    background-image: url(./images/goettingen.jpg);
+}
+section > div:nth-last-of-type(2) {
+    background-image: url(./images/lueneburg.jpg);
+}
+section > div:nth-last-of-type(3) {
+    background-image: url(./images/trier.jpg);
+}
+section > div:nth-last-of-type(4) {
+    background-image: url(./images/winsen.jpg);
+}
+section > div:nth-last-of-type(5) {
+    background-image: url(./images/goettingen.jpg);
+}
+section > div:nth-last-of-type(6) {
+    background-image: url(./images/lueneburg.jpg);
+}
+section > div:nth-last-of-type(7) {
+    background-image: url(./images/trier.jpg);
+}
+section > div:nth-last-of-type(8) {
+    background-image: url(./images/winsen.jpg);
+}
+section > div:nth-last-of-type(9) {
+    background-image: url(./images/lueneburg.jpg);
+}
+section > div {
+    flex-basis: 20%;
+    flex-grow: 0.5;
+    /* flex-shrink: 1; */
+    background-size: 100% 100%;
+    background-origin: 50% 50%;
+    margin: 1vw;
+    
+    
+    height: 10vw;
+    
+    transition: all 0.5s linear;
+}
+
+section > div:hover {
+    flex-basis: 30%;
+    height: 15vw;
+    box-shadow: 0 0 5vw rgba(218, 52, 10, 0.966);
+}
+body {
+    background: rgba(0, 0, 0, 0.986);
+    display: flex;
+    justify-content: center;
+
+}

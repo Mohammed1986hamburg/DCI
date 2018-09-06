@@ -1,0 +1,56 @@
+// $ele: electornics;   // ele is varible for the the class 'electornics'
+
+// section.#{$ele} {  color: red; }
+// div {
+//   $width: 80vw;
+//   $height: 12vw;
+
+//   &:first-of-type {
+//     width: $width;
+//     height: $width*(20/100);
+//   }
+
+//   &:last-of-type {
+//     height: $height;
+//     width:6.5 * $height;
+//   }
+// }
+body {
+  margin: 0;
+  nav 
+  {
+    display: flex;
+    justify-content: space-around;
+    li {
+      list-style-type: none;
+      padding: 5vw 6vw;
+      background-size: 75% 75% ;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @each $pos, $team in (1, bayern), (2, dortmund), (3, frankfurt), (4, gladbach), (5, koln), (6, mainz), (7, nurnberg), (8, pauli) 
+      {
+        &:nth-of-type(#{$pos})
+         {
+          background-image: url(../images/#{$team}.png);
+         }
+      }
+      
+    }
+    
+
+    // @for $i from 1 to 8
+    //  {
+    //   li:nth-of-type(#{$i})
+    //    { 
+    //      font-size: 1vw * $i; 
+    //      background: rgba(48, 49, 255, $i/10);
+    //      width: $i*10 + px;
+    //      &:after 
+    //      {  
+    //       @if  $i == 1 {  content:'#{$i}'+ st;    }@else if  $i > 1 {  content:'#{$i}'+ th;   }
+            
+    //      }
+    //    }
+      // }   
+  }
+}

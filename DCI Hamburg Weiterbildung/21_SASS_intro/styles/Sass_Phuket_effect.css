@@ -1,0 +1,43 @@
+section {
+  width: 60vw;
+  height: 40vw;
+  border: 1px solid black;
+  background-image: url(https://www.thailandtravel.co/wp-content/uploads/2015/10/phuket.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 5vw auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: background-size 0.3s linear;
+  transition: background-size 0.3s linear;
+}
+
+section:hover {
+  background-size: 110% 110%;
+}
+
+section:hover p {
+  height: 8vw;
+}
+
+section p {
+  color: #fff;
+  font-family: verdana;
+  font-size: 1.5vw;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s linear;
+  transition: height 0.5s linear;
+}
+/*# sourceMappingURL=Sass_Phuket_effect.css.map */

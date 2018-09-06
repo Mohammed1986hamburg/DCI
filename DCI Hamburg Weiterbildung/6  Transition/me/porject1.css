@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+header {
+  background: black;
+  color: white;
+  font-size: 5vw;
+  font-family: monospace;
+  text-align: center;
+  padding: 2vw 1vw;
+      }
+
+nav {
+  background: deepskyblue;
+  margin: 1vw 0;
+  text-align: center;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 3vw;
+  color: white;
+  text-decoration: none;
+  padding: 1vw 2vw;
+}
+
+nav a:hover {
+  background: black;
+  color: cyan;
+}
+
+section {
+  text-align: center;
+  border: 1px solid black;
+  width: 80%;
+  margin: 1vw auto;
+
+}
+
+section img {
+  width: 75%;
+
+}
+h3 {
+  font-family: tahoma;
+  font-size: 3.2vw;
+ }
+
+section h3{
+  font-size:1.8vw;
+  margin-bottom: 1vw;
+}

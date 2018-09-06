@@ -1,0 +1,40 @@
+$MHD_color: #00FF82;
+$blue_color: #100CE8;
+$text_size: 3vw;
+
+li:nth-of-type(1){background:  $MHD_color;    font-size: $text_size;}
+li:nth-of-type(2){background:  $blue_color;   font-size: $text_size*2;}
+li:nth-of-type(3){background:  $MHD_color;    font-size: $text_size*3;}
+li:nth-of-type(4){background:  $blue_color;   font-size: $text_size*4;}
+li:nth-of-type(5){background:  $MHD_color;    font-size: $text_size*5;}
+
+nav {
+    background: lightpink;
+
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width: 768px){flex-direction: column;} 
+           
+    li{
+    
+        
+        list-style-type: none;
+        color: white;
+        
+        text-align: center;
+
+        &:nth-last-of-type(even) {background: red;}
+            
+        
+
+        @media screen and (max-width: 768px){ font-size: 5vw; }
+            
+        
+          
+    }
+
+
+}

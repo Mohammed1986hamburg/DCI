@@ -1,0 +1,100 @@
+:root {
+    counter-reset: variabale;   /*  variable= 0 */
+    --varible-myBlue: #32E1FF;
+    --big-font: 3.5vw;
+    --small-font: 1.5vw;
+    --image-adress: https://www.gooodkdmdn,
+}
+/* .it8 {
+    background-color: var(--varible-myBlue)
+} */
+
+.it8 li:before {
+    counter-increment: variabale;    /*  variable= variable + 1 */
+   content: counter(variabale) '. ';  /*  counter(variabale) that mean print variable */
+}
+ul {
+    list-style-type: none;
+}
+.grid-container {
+    width: 80vw;
+    margin: 5vw auto;
+    display: grid;
+    grid-template: repeat(8,5vw) / repeat(6, 1fr);
+    grid-gap: 0.5vw 0.5vw;
+}
+.grid-items {
+    background: yellowgreen;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.it1 {
+    
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+
+}
+.it2 {
+    
+    /* grid-column: 2 / span 5;
+    grid-row: 1 / span 1; */
+    grid-area: 1 / 2 / span 1 / span 5;
+
+}
+.it3 {
+    
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
+
+}
+.it4 {
+    
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 1;
+
+}
+.it5 {
+    
+    grid-column: 5 / span 2;
+    grid-row: 3/ span 1;
+
+}
+.it6 {
+    
+    grid-column: 1 / span 2;
+    grid-row: 4/ span 2;
+
+}
+.it7 {
+    
+    grid-column: 1 / span 2;
+    grid-row: 6/ span 2;
+
+}
+.it8 {
+    
+    grid-column: 3 / span 3;
+    grid-row: 4/ span 4;
+
+}
+.it9 {
+    
+    grid-column: 6 / span 1;
+    grid-row: 4/ span 4;
+
+}
+.it10 {
+    
+    grid-column: 1 / span 6;
+    grid-row: 8/ span 1;
+
+}
+/* div p:before {
+    content: 'Mohammed';
+    color:red;
+}
+div p:after {
+    content: 'Wahba';
+    color:blue;
+} */

@@ -1,0 +1,59 @@
+section {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+img.small {
+  width: 5vw;
+  height: 5vw;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+div {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div img.big {
+  width: 0;
+  height: 0;
+  transition: all 1s linear;
+}
+
+button:first-of-type:focus ~ div > img:first-of-type {
+  width: 50vw;
+  height: 40vw;
+}
+
+button:nth-of-type(2):focus ~ div > img:nth-of-type(2) {
+  width: 50vw;
+  height: 40vw;
+}
+
+button:nth-of-type(3):focus ~ div > img:nth-of-type(3) {
+  width: 50vw;
+  height: 40vw;
+}
+
+button:nth-of-type(4):focus ~ div > img:nth-of-type(4) {
+  width: 50vw;
+  height: 40vw;
+}
+
+button:last-of-type:focus ~ div > img:last-of-type {
+  width: 50vw;
+  height: 40vw;
+}

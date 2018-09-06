@@ -1,0 +1,65 @@
+body h3 {
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 5vw;
+  font-family: monospace;
+  padding: 2vw 1.5vw;
+  margin: 0;
+}
+
+body nav {
+  margin: 1.1vw 0;
+  background: deepskyblue;
+  height: 5.4vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body nav li {
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  list-style-type: none;
+}
+
+body nav li a {
+  color: white;
+  font-size: 1.4vw;
+}
+
+body nav li ul {
+  padding: 0;
+  display: none;
+}
+
+body nav li ul > li a {
+  text-decoration: none;
+  padding: 1vw 0;
+  -webkit-transition: color 0.4s linear;
+  transition: color 0.4s linear;
+}
+
+body nav li ul > li a:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+body nav > li {
+  display: inline-block;
+  font-size: 3vw;
+  padding: 1vw 3.04vw;
+  vertical-align: top;
+}
+
+body nav > li:hover {
+  background: black;
+  color: cyan;
+}
+
+body nav > li:hover ul {
+  display: block;
+}
+/*# sourceMappingURL=Dropdown_style_SCCS.css.map */
