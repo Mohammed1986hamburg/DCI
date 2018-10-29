@@ -1,0 +1,109 @@
+@import 'cities_texts';
+
+body {
+  background: #ccc;
+  margin: 0;
+
+  main {
+    $main_width: 75vw;
+    width: $main_width;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    margin: 5vw auto;
+
+      section {
+        $num_of_sections_row: 3;
+        $each_section-width: $main_width / ($num_of_sections_row + 0.5);
+        $horizontal_margin: ($main_width - ($each_section-width * $num_of_sections_row)) / 7;
+        box-sizing: border-box;
+        width: $each_section-width;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        height: 40vw;
+        justify-content: space-between;
+        margin: 1vw $horizontal_margin;
+
+        div, h4, p, button {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        div {
+          height: 18vw;
+          background: {
+            repeat: no-repeat;
+            size: 100% 100%;
+          }
+        }
+
+        @mixin font_props($pad, $family, $font-size, $align: left) {
+          padding: $pad;
+          font: {
+            family: $family;
+            size: $font-size;
+          }
+          text: {
+            align: $align;
+          }
+        }
+
+        h4 {
+          @include font_props(1.5vw 0, tahoma, 1.7vw, center);
+        }
+
+        p {
+          @include font_props(1vw 1.2vw, verdana, 1.3vw);
+        }
+
+        button {
+          font: {
+            size: 1.3vw;
+            family: 'Franklin Gothic';
+          }
+          padding: 1vw 0.5vw;
+          background: #0075dd;
+          border: none;
+        }
+
+        @each $count, $city, $text in (1, hamburg, $hamburg_text),
+                               (2, home, $home_text),
+                               (3, sofia, $sofia_text),
+                               (4, rome, $rome_text),
+                               (5, kobenhavn, $kobenhavn_text),
+                               (6, santorini, $santorini_text),
+                               (7, beach, $beach_text)     {
+
+        &:nth-of-type(#{$count}) {
+
+              > div {
+                @if $city == beach {
+                  background-image: url(../../images/#{$city}.jpeg);
+                } @else {
+                  background-image: url(../../images/#{$city}.jpg);
+                }
+              }
+
+              > h4:before {
+                @if $city == beach {
+                  content: to_upper_case('maldives');
+                } @else {
+                content: to_upper_case('#{$city}');
+                }
+              }
+
+              > p:before {
+                content: $text;
+              }
+
+        }
+
+                               }
+
+      }
+
+    }
+
+}

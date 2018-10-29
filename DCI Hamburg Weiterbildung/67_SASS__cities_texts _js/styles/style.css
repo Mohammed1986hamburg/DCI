@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body {
+  background: yellow;
+}
+a {
+  padding: 1vw 2vw;
+  text-decoration: none;
+  flex-grow: 1;
+  font-size: 1.5vw;
+  text-align: center;
+}
+body main {
+  background: lightpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  width: 26vw;
+}
+
+body main section {
+  background: rgba(0, 255, 213, 0.363);
+  /* margin: 2vw 1vw; */
+  /* border: 2px black solid; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 26.66667vw;
+  height: 35vw;
+  overflow: hidden;
+  
+}
+.active {
+  display: flex; 
+}
+
+body main section button {
+  background: blue;
+  color: black;
+  width: 26.66667vw;
+  height: 5vw;
+  font-size: 2vw;
+}
+
+body main section div {
+  width: 100%;
+  height: 20vw;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+body main section h4 {
+  margin: 0;
+  font-size: 3vw;
+}
+
+body main section p {
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+body main section:nth-of-type(1) div {
+  background-image: url(../images/a1.jpg);
+}
+
+body main section:nth-of-type(1) h4:before {
+  content: "Rome";
+}
+
+body main section:nth-of-type(1) p:before {
+  content: "Rome, Italy’s capital, is a sprawling, cosmopolitan city with nearly 3,000 years of globally influential art, architecture and culture on display.";
+}
+
+body main section:nth-of-type(2) div {
+  background-image: url(../images/a2.jpg);
+}
+
+body main section:nth-of-type(2) h4:before {
+  content: "France";
+}
+
+body main section:nth-of-type(2) p:before {
+  content: "France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses";
+}
+
+body main section:nth-of-type(3) div {
+  background-image: url(../images/a3.jpg);
+}
+
+body main section:nth-of-type(3) h4:before {
+  content: "Berlin";
+}
+
+body main section:nth-of-type(3) p:before {
+  content: "Berlin, Germany’s capital, dates to the 13th century. Reminders of the citys turbulent 20th-century history include its Holocaust memorial and the Berlin Walls graffitied remains";
+}
+
+body main section:nth-of-type(4) div {
+  background-image: url(../images/a4.jpg);
+}
+
+body main section:nth-of-type(4) h4:before {
+  content: "Ankra";
+}
+
+body main section:nth-of-type(4) p:before {
+  content: "Ankara, Turkey’s cosmopolitan capital, sits in the country’s central Anatolia region. It’s a center for the performing arts, home to the State Opera and Ballet";
+}
+
+body main section:nth-of-type(5) div {
+  background-image: url(../images/a5.jpg);
+}
+
+body main section:nth-of-type(5) h4:before {
+  content: "Morco";
+}
+
+body main section:nth-of-type(5) p:before {
+  content: "Morocco, a North African country bordering the Atlantic Ocean and Mediterranean Sea, is distinguished by its Berber, Arabian and European cultural influences";
+}
+
+body main section:nth-of-type(6) div {
+  background-image: url(../images/a6.jpg);
+}
+
+body main section:nth-of-type(6) h4:before {
+  content: "Doha";
+}
+
+body main section:nth-of-type(6) p:before {
+  content: "Doha, capital of the peninsular Arabian Gulf country Qatar, is a modern city on Doha Bay. Ringing its downtown waterfront are numerous parks and the Corniche Promenade";
+}
+
+body main section:nth-of-type(7) div {
+  background-image: url(../images/a7.jpg);
+}
+
+body main section:nth-of-type(7) h4:before {
+  content: "kampala";
+}
+
+body main section:nth-of-type(7) p:before {
+  content: "Kampala is Ugandas national and commercial capital bordering Lake Victoria, Africas largest lake. Hills covered with red-tile villas and trees surround an urban centre of contemporary skyscrapers";
+}
+/*# sourceMappingURL=style.css.map */

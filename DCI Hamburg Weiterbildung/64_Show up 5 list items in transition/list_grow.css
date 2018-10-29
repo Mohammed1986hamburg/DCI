@@ -1,0 +1,25 @@
+button {
+  font-family: monospace;
+  font-size: 2vw;
+  padding: 1vw 0.5vw;
+  color: purple;
+  background: gold;
+  border: none;
+  margin-bottom: 1vw;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  font-size: 2.5vw;
+  font-family: 'Franklin Gothic';
+  background: rebeccapurple;
+  color: white;
+  margin-bottom: 0.5vw;
+  padding: 1vw 0.2vw;
+  overflow: hidden;
+  width: 100%;
+}
