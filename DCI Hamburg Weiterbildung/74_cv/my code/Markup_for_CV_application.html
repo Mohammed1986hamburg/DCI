@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CV</title>
+  <link rel="stylesheet" href="cv.css">
+  <script type="text/javascript" src="cv.js"></script>
+</head>
+<body>
+
+  <form>
+    <fieldset>
+        <legend> محمد وهبة يرحب بكم </legend>
+
+        <label>Put your ful name </label>
+        <input type="text" minlength="4" maxlength="12" required/>
+        <p class="error">Have to write your name</p>
+
+        <label>Put your birthday </label>
+        <input type="date" required min="1986-08-17" max="2020-01-01"/>
+        <p class="error">Have to write your birthday</p>
+
+        <label>Upload your photo in CV style</label>
+        <input type="file" required/><br />
+
+        <label>Pick your favorite color</label>
+        <input type="color" id="primaryColor"  required/><br />
+
+        <label>Pick your secondary color</label>
+        <input type="color" id="secondaryColor"  required/><br />
+
+        <textarea placeholder="Write a info about you please" required maxlength="150"></textarea>
+        <p class="error">please write about yours</p>
+        <p class="counter">you have 150 charachters</p>
+
+        <label>Pick your Skills: </label><br />
+
+        <li><input type="checkbox" />JavaScript</li>
+        <li><input type="checkbox" />Ruby</li>
+        <li><input type="checkbox" />Python</li>
+        <li><input type="checkbox" />Java</li>
+        <li><input type="checkbox" />PHP</li>
+
+    </fieldset>
+
+    <button type="submit">Create your CV by Mohammed</button>
+
+  </form>
+  
+</body>
+</html>

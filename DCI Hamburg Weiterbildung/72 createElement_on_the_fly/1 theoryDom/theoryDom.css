@@ -1,0 +1,63 @@
+section {
+  margin: 5vw auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+div {
+  border: 0.2vw solid black;
+  text-align: center;
+}
+ div img {
+   width: 90%;
+   height: 15vw;
+ }
+
+ img {
+   width: 50%;
+   height: 30vw;
+ }
+
+ textarea {
+   width: 50%;
+   padding: 1vw;
+   font-size: 2.4vw;
+ }
+
+ button {
+   margin-top: 1vw;
+   font-size: 1.5vw;
+   padding: 1vw;
+ }
+
+ 
+
+ span {
+  font-size: 3vw;
+  color: red;
+   color: white;
+   position: absolute;
+   top: 0.2vw;
+   right: 0;
+   font-size: 5vw;
+   opacity: 0.3;
+   transition: opacity 0.4s ease-out;
+ }
+
+ span:hover {
+   cursor: pointer;
+ }
+
+p {
+  background: green;
+  color: white;
+  padding: 3vw;
+  font-size:2vw;
+  line-height: 2vw;
+  position: relative;
+}
+
+p:hover span {
+  opacity: 1;
+}

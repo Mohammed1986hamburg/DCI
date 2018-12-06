@@ -1,0 +1,89 @@
+body{
+  background: silver;
+}
+input, textarea {
+  margin: 0.5vw;
+  display: block;   /*new idea here */
+}
+input:invalid{ /*new idea here */
+  border: 0.2vw solid red;
+}
+textarea:invalid{ /*new idea here */
+  border: 0.2vw solid red;
+}
+p.counter{
+  color: red;
+
+}
+input:invalid + p.error{
+  display: block; /*new idea here */
+  border: 0.2vw solid red;
+}
+textarea:invalid + p.error{
+  display: block; /*new idea here */
+  border: 0.2vw solid red;
+}
+input[type='checkbox'],input[type='color'] { /*new idea here */
+  display: inline-block;
+}
+
+p.error { /*new idea here */
+  display: none;
+  color: red;
+  background:skyblue;
+  width: 20vw;
+}
+
+textarea {
+  width: 45%;
+  height: 5vw;
+  font-size: 1.4vw;
+  padding: 1vw;
+}
+
+section {
+  text-align: center;
+  width: 50vw;
+  margin: 3vw auto;
+  position: relative;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5vw;
+  margin: 1vw auto;
+  padding: 2vw;
+}
+
+p {
+  font-size: 1.75vw;
+  padding: 1vw;
+}
+
+article {
+  font-size: 1.5vw;
+  font-family: tahoma;
+  padding: 1vw;
+}
+
+img {
+  width: 50%;
+  height: 25vw;
+}
+
+span {
+  font-size: 2.5vw;
+  position: absolute;
+  right: 0.5vw;
+  top: 0.5vw;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5vw;
+}
+
+span:hover {
+  cursor: pointer;
+}
+

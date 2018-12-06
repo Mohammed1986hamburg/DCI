@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background: deepskyblue;
+  margin-bottom: 2vw;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav > li {
+  font-size: 2.1vw;
+  padding: 1.2vw 1.5vw;
+  font-family: 'Comic sans';
+  text-decoration: none;
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
+}
+
+nav > li:hover {
+  cursor: pointer;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+ul {
+  display: none;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2vw;
+  padding: 0.5vw 0;
+  width: 75%;
+  margin: 1vw auto;
+}
+
+ul li:hover {
+  border-bottom: 1px solid red;
+}
+
+.active {
+  display: block;
+}
+
+nav > li:hover {
+  background: black;
+  color: cyan;
+}
+
+section {
+  width: 50%;
+  margin: 5vw auto;
+  border: 0.1vw solid black;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+section:first-of-type {
+  opacity: 1;
+}
+
+section h3, section p {
+  margin: 1vw;
+  font-family: 'Franklin Gothic';
+  font-size: 2.2vw;
+}
+
+section p {
+  font-size: 1.5vw;
+}
+
+section img {
+  width: 35%;
+  height: 25vw;
+}
+
+.changeColor {
+  background: black;
+  color: cyan;
+}
+
+section:last-of-type {
+  height: 10vw;
+  visibility: hidden;
+}

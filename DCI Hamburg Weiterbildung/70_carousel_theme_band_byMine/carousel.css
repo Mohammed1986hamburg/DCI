@@ -1,0 +1,61 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+div.container {
+  display: flex;
+  width: 50vw;
+  background: rgba(243, 238, 238, 0.7);
+  margin: 5vw auto;
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+div img {
+  width: 0;
+  height: 30vw;
+  flex-shrink: 0;
+  transition: all 2s  linear;
+  
+}
+
+#left {
+  position: absolute;
+    left: 1%;
+    top: 10vw;
+    font-size: 7vw;
+    
+}
+#right {
+  position: absolute;
+  right: 1%;
+  top: 10vw;
+  font-size: 7vw;
+
+}
+#but_left {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  opacity: 0.3;
+  z-index: 5;
+  
+    
+}
+#but_right {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 10%;
+  opacity: 0.3;
+  z-index: 5;
+
+}
+.ToShow{
+  width: 100%;
+  
+  
+}
