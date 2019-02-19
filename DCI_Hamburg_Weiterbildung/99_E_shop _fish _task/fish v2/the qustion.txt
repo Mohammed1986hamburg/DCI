@@ -1,0 +1,19 @@
+Get rid of the addFishToOrder function and create a new function that accepts
+
+arguments. The number of the tunas the customer wants to put to his cart,
+
+the number of salmons, and finally the number of kois.
+
+For example when called the function: newFishOrder(5, 2, 1) that means the
+
+customer wants to buy 5 tunas, 2 salmons and a koi fish.
+
+First we need to check if we have 5 tunas in our stock, if yes we add them to
+
+the basket with all necessary info. If not, we add as many as we have (if 3, then 3)
+
+At the end we calculate the cost of the cart for the customer.
+
+In our case is going to be 5 tunas 10 + 2 salmons 50 + 1 koi * 100 = 250 dollars.
+
+If we have only 3 tunas then to give then of course the cost is 230 dollars.

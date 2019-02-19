@@ -1,0 +1,1 @@
+In case someone wants to have this also. Take notice that this is the non-expandable, non-loop solution.
