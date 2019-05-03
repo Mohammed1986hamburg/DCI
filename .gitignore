@@ -3,3 +3,5 @@
 .jpeg
 .dp
 head-first-java.pdf
+/node_modules/
+.env

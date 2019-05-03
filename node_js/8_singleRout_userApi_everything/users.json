@@ -1,0 +1,44 @@
+[
+    {
+        "firstName": "Mohammed",
+        "lastName": "Wahba",
+        "userName": "MHD1986",
+        "email": "best.pid@gmail.com",
+        "password": "mhd1234"
+    },
+    {
+        "firstName": "Mauricio",
+        "lastName": "Navarro",
+        "userName": "Mauro",
+        "email": "mauro@gmail.com",
+        "password": "mauro46"
+      },
+      {
+        "firstName": "Jewgeny",
+        "lastName": "Kuhn",
+        "userName": "Eugen",
+        "email": "eugen@gmx.net",
+        "password": "eugen32"
+      },
+      {
+        "firstName": "Meir",
+        "lastName": "Overferst",
+        "userName": "meirHelpMe",
+        "email": "meir@gmail.com",
+        "password": "meirTheKing"
+      },
+      {
+        "firstName": "Daniel",
+        "lastName": "Cipolla",
+        "userName": "danielTheAbsent",
+        "email": "latino69xxx@gmail.com",
+        "password": "danielTheMachine"
+      },
+      {
+        "firstName": "Milad",
+        "lastName": "Khoshkaran",
+        "userName": "IranMan",
+        "email": "milad@gmail.com",
+        "password": "theBeast"
+      }
+]

@@ -1,0 +1,57 @@
+[
+    {
+      "firstName": "Mauro",
+      "age": 46,
+      "favTopic": "SVG"
+    },
+    {
+      "firstName": "Eugen",
+      "age": 32,
+      "favTopic": "Redux"
+    },
+    {
+      "firstName": "Meir",
+      "age": 35,
+      "favTopic": "API's"
+    },
+    {
+      "firstName": "Mohammed",
+      "age": 32,
+      "favTopic": "Node.js"
+    },
+    {
+      "firstName": "Mohamad",
+      "age": 30,
+      "favTopic": "React"
+    },
+    {
+      "firstName": "Murhaf",
+      "age": 39,
+      "favTopic": "HTML"
+    },
+    {
+      "firstName": "Sue",
+      "age": 38,
+      "favTopic": "SASS"
+    },
+    {
+      "firstName": "Milad",
+      "age": 30,
+      "favTopic": "React"
+    },
+    {
+      "firstName": "Jens",
+      "age": 47,
+      "favTopic": "Ruby"
+    },
+    {
+      "firstName": "Daniel",
+      "age": 35,
+      "favTopic": "Node red"
+    },
+    {
+      "firstName": "Marcelo",
+      "age": 37,
+      "favTopic": "Git"
+    }
+  ]
