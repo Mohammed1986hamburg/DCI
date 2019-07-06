@@ -1,6 +1,8 @@
 const express = require('express');
 const shopModel = require('../models/shopModel');
 
+ 
+
 const getByDistanceFun= async (req,res, next)=>{
 
   try {
@@ -20,8 +22,15 @@ const getByDistanceFun= async (req,res, next)=>{
 
 }
 
+const saveImage= async (req,res, next)=>{
 
-module.exports={getByDistanceFun}
+  console.log(req.file);
+  res.status(200).json({msg:"ok"})
+
+}
+
+
+module.exports={getByDistanceFun,saveImage}
 
 
 

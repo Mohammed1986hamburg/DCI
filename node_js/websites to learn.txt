@@ -3,8 +3,9 @@ https://www.codecademy.com/learn/learn-node-js
 https://www.codecademy.com/learn/learn-express
 
 --------------------------------------------------------
-Node.js tutorial 
-https://www.youtube.com/watch?v=65a5QQ3ZR2g&list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR
+typescript
+
+https://www.udemy.com/course/understanding-typescript/?couponCode=ACAD_W
 
 ------------------------------------------------------------------------
 to get code:
@@ -12,7 +13,15 @@ https://www.freecodecamp.org/
 
 ----------------------------------------------------------
 
+free Cloud server
 
+https://www.heroku.com/
+-----------------------------------------------------------
+
+To test request 
+https://putsreq.com/
+
+----------------------------------------
 
 
 
@@ -24,5 +33,9 @@ https://www.freecodecamp.org/
 https://www.academind.com/learn/node-js/
 -------------------------------------------
 
+Node.js payment :
+https://www.academind.com/learn/node-js/nodejs-shopping-chart/stripe-payment-views/
 
+Node.js  socket.io :
+https://socket.io/get-started/chat/
 

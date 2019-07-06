@@ -1,15 +1,18 @@
 // npm i jsonwebtoken  
-
+// npm install cookie-parser
 const express= require('express');
 const app=express();
 const mongoose=require('mongoose');
 const dotenv=require('dotenv').config();
-const morgan=require('morgan');
+
 const databaseUrl = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0-wuxiw.mongodb.net/14_authentication`
-const jwt= require('jsonwebtoken')   //jwt.io
+const jwt= require('jsonwebtoken');  //jwt.io
+//  https://medium.com/dev-bits/a-guide-for-adding-jwt-token-based-authentication-to-your-single-page-nodejs-applications-c403f7cf04f4
+const cookieParser= require('cookie-parser');
 
 // to all
-app.use(morgan('dev'));
+app.use(cookieParser());
+
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
@@ -60,8 +63,10 @@ const signIn= async (req, res, next) => {
        return res.status(404).json({message: 'Either username or password not correct'})
       }
       else{
-      const initialToken= await jwt.sign({username:userFound.username},'anything_to_encreption' )
-      res.status(200).json({username:userFound.username,token:initialToken}) 
+      const initialToken= await jwt.sign({username:userFound.username},'anything_to_encreption' );
+      console.log(initialToken);
+      res.cookie('authToken', initialToken, {httpOnly: true});
+      res.status(200).json(`${userFound.username}, you are loged in succesfully and get Token via cookie  `) 
       }
       
     }catch (error) {
@@ -72,13 +77,29 @@ const signIn= async (req, res, next) => {
 // to delelet acount by token
 const deleteByToken=async (req, res, next)=>{
     try{
-    const tokenVerified = await jwt.verify(req.body.token,'anything_to_encreption');
-    const decodedUser= await jwt.decode(req.body.token,'anything_to_encreption');
+    const inputToken= req.cookies.authToken;
+    console.log(inputToken);
+
+    await jwt.verify(inputToken,'anything_to_encreption');
+    const decodedUser= await jwt.decode(inputToken,'anything_to_encreption');
     const deletedUser=await userModel.findOneAndDelete({username:decodedUser.username});
     deletedUser? res.status(202).json({ message:`you had had verified and deleted succesfully`}): res.status(206).json({ message:`the user not found`});
     }catch(error){
         next(error); 
     }
+}
+
+// to logout acount by token and clear 
+const logOut=async (req, res, next)=>{
+  try{
+  const inputToken= req.cookies.authToken;
+  console.log(inputToken);
+  await jwt.verify(inputToken,'anything_to_encreption');
+  res.clearCookie('authToken');
+  res.status(202).json({ message:`you had had loged out by inputToken-clearCookie succesfully`});
+  }catch(error){
+      next(error); 
+  }
 }
 
 
@@ -94,6 +115,7 @@ const errorHandler=(err, req,res,next)=>{                   //err=errorCase
 app.post('/users',postNewUser);
 app.post('/users/signin',signIn);
 app.delete('/users/delete',deleteByToken);
+app.get('/users/logout',logOut);
 app.use(errorHandler);
 
 

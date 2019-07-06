@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 const dotenv=require('dotenv').config();
-const databaseUrl = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0-wuxiw.mongodb.net/12_confirm_email_exercise`
+const databaseUrl = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0-wuxiw.mongodb.net/tyke_coding_challenge`
 
 
 

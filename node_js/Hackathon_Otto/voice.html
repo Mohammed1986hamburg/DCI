@@ -1,0 +1,77 @@
+<html>
+    
+  <body>
+
+<script>
+
+       window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+       let finalTranscript = '';
+       let recognition = new window.SpeechRecognition();
+       recognition.interimResults = true;
+       recognition.maxAlternatives = 10;
+       recognition.continuous = true;
+       recognition.onresult = (event) => {
+            let interimTranscript = '';
+            for (let i = event.resultIndex, len = event.results.length; i < len; i++) {
+                let transcript = event.results[i][0].transcript;
+                if (event.results[i].isFinal) {
+                     finalTranscript += transcript;
+                } else {
+                    interimTranscript += transcript;
+                }
+           }
+       document.getElementById("demo").value = finalTranscript + interimTranscript ;
+       }
+
+   function startAudio() {
+       recognition.start();
+   }
+
+   function stopAudio() {
+       recognition.stop();
+   }
+
+</script>
+
+      <table border = 1>
+
+           <tr>
+
+                 <td style="float:right;"> Hallo, ich bin OYA. Dein persönlicher Shoppingassisten! </td>
+
+           </tr>
+
+           <tr>
+
+                 <td style="float:right;"> Wie kann ich dir weiterhelfen? </td>
+
+           </tr>
+
+           <tr>
+
+                 <td> okay test test test test </td>
+
+           </tr>
+
+           <tr>
+
+                 <td style="float:right;"> Ich suche dir einen test raus </td>
+
+           </tr>
+
+           <tr>
+
+                 <td style="float:right;"> Wie viel Geld möchtest du ausgeben? </td>
+
+           </tr>
+
+     </table>
+
+     <form method = "POST">
+        <p>Message: <input type="text" name="user_message" value="" id="demo" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+        <p><input type="button" onclick="startAudio();" value = "start audio" /></p>
+        <p><input type="button" onclick="stopAudio();" value = "stop audio" /></p>
+     </form>
+  </body>
+</html>
